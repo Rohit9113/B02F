@@ -1,0 +1,37 @@
+.assis-heading{
+    text-align: center;
+    margin-top: 8%;
+    font-family: "Cormorant", serif;
+    color: #201041;
+    font-size: 40px;
+    font-weight: 700;
+}
+.assis-sub-heading{
+    font-family: "Cormorant", serif;
+    text-align: center;
+    margin-top: -2%;
+    font-size: 23px;
+}
+
+.assis-card{
+    margin: 10%;
+    height: 228px;
+    background-color: #EE481447;
+    border-radius: 20px;
+}
+.txtbody{
+    text-align: center;
+    margin-top: 30%;
+}
+.assis-card-headtxt{
+    height: 31px;
+    width: 190px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    /* font-family: "Cormorant", serif; */
+    font-size: 20px;
+    font-weight: bold black;
+}
+.description-paragraph{
+    font-size: 12px;
+}

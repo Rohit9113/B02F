@@ -1,0 +1,40 @@
+.feature-heading{
+    text-align: center;
+    margin-top: 8%;
+    font-family: "Cormorant", serif;
+    color: #201041;
+    font-size: 40px;
+    font-weight: 700;
+}
+.feature-sub-heading{
+    font-family: "Cormorant", serif;
+    text-align: center;
+    margin-top: -2%;
+    font-size: 23px;
+}
+
+.service-card{
+    margin: 10%;
+    height: 228px;
+}
+.servimg{
+    height: 180px;
+    width: 100%;
+}
+.service-card-headtxt{
+    height: 31px;
+    width: 190px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-family: "Cormorant", serif;
+    font-size: 18px;
+}
+.icon-container {
+    display: flex;
+    font-size: 1rem;
+    color: #838080;
+    margin-bottom: 0.5rem;
+}
+.rating{
+    display: flex;
+}
