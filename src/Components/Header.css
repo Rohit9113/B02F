@@ -1,0 +1,16 @@
+.navbar-custom {
+  background-color: #641566;
+}
+
+.navbar-custom .nav-link {
+  color: white;
+  margin-right: 10px;
+}
+
+.navbar-custom .nav-link:last-child {
+  margin-right: 0;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffffff;
+}

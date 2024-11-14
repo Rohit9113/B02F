@@ -9,7 +9,7 @@ const NavBar = () => {
         <header>
             <Navbar expand="lg" style={{ backgroundColor: '#fff', padding: '10px' }} className="main-navbar">
                 <Container className="d-flex justify-content-between align-items-center">
-                    {/* Logo */}
+                    {/* Company Logo */}
                     <Navbar.Brand href="#">
                         <img
                             src={logo}
@@ -19,8 +19,8 @@ const NavBar = () => {
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="navbar-nav" />
-                        <Navbar.Collapse id="navbar-nav">
-                            <Nav className="ml-auto d-flex align-items-center">
+                    <Navbar.Collapse id="navbar-nav">
+                        <Nav className="ml-auto d-flex align-items-center">
                             <div className='underNav'>
                                 <Nav.Link href="#home" style={{ color: '#641566', fontWeight: 'bold' }}>Home</Nav.Link>
                                 <Nav.Link href="#about-us" style={{ color: '#641566', fontWeight: 'bold' }}>About Us</Nav.Link>
@@ -30,22 +30,22 @@ const NavBar = () => {
                                 <Nav.Link href="#contact" style={{ color: '#641566', fontWeight: 'bold' }}>Contact Us</Nav.Link>
                             </div>
 
-                                <Button
-                                    style={{
-                                        width: '139.6px',
-                                        height: '40.24px',
-                                        backgroundColor: '#641566',
-                                        border: 'none',
-                                        borderRadius: '20px',
-                                        color: '#ffffff',
-                                        fontWeight: 'bold',
-                                        marginLeft: '20px',
-                                    }}
-                                >
-                                    Login
-                                </Button>
-                            </Nav>
-                        </Navbar.Collapse>
+                            <Button
+                                style={{
+                                    width: '139.6px',
+                                    height: '40.24px',
+                                    backgroundColor: '#641566',
+                                    border: 'none',
+                                    borderRadius: '20px',
+                                    color: '#ffffff',
+                                    fontWeight: 'bold',
+                                    marginLeft: '20px',
+                                }}
+                            >
+                                Login
+                            </Button>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </header>
