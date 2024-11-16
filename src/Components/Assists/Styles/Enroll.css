@@ -1,0 +1,155 @@
+.enroll-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.enroll-background-img {
+  width: 100%;
+  height: auto;
+}
+
+.text-over-img {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  transform: translateY(-20%);
+  z-index: 2;
+}
+
+.enroll-headtxt {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.headtxt1 {
+  color: #a252a3;
+}
+.headtxt2 {
+  color: #641566;
+}
+.headtxt3 {
+  color: #2393ee;
+}
+
+.enroll-para {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: black;
+  max-width: 690px;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 10%;
+  left: 23%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.enroll-btn {
+  background-color: #641566;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  width: 13rem;
+  height: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.layer2-image {
+  position: absolute;
+  top: 32%;
+  transform: translateY(-50%);
+  right: 1.5%;
+  width: 630px;
+  height: auto;
+}
+
+.layer3-image {
+  position: absolute;
+  top: 64%;
+  transform: translateY(-50%);
+  right: 5%;
+  width: 415px;
+  height: auto;
+  opacity: 0.6;
+}
+
+@media (min-width: 375px) and (max-width: 1000px) {
+  .enroll-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .enroll-background-img {
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+  .text-over-img {
+    position: absolute;
+    /* top: 51%; */
+    left: 3%;
+    transform: translateY(-20%);
+    z-index: 2;
+  }
+
+  .enroll-headtxt {
+    font-size: 80%;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .enroll-para {
+    font-size: 0.5rem;
+    line-height: 1.5;
+    color: black;
+    max-width: 60%;
+  }
+
+  .button-container {
+    position: absolute;
+    bottom: 5%;
+    left: 16%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  .enroll-btn {
+    background-color: #641566;
+    border: none;
+    font-size: 42%;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2px;
+    width: 100%;
+    height: 3%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .layer2-image {
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%);
+    right: 1.5%;
+    width: 50%;
+    height: auto;
+  }
+
+  .layer3-image {
+    position: absolute;
+    top: 67%;
+    transform: translateY(-50%);
+    right: 5%;
+    width: 30%;
+    height: auto;
+    opacity: 0.6;
+  }
+}

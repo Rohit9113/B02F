@@ -1,55 +1,50 @@
-import React from 'react';
-import { Navbar, Container, Button, Nav } from 'react-bootstrap';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import logo from './images/AssignerLogo.png';
-import './Nav.css'
+import './Nav.css';
 
 const NavBar = () => {
-    return (
-        <header>
-            <Navbar expand="lg" style={{ backgroundColor: '#fff', padding: '10px' }} className="main-navbar">
-                <Container className="d-flex justify-content-between align-items-center">
-                    {/* Company Logo */}
-                    <Navbar.Brand href="#">
-                        <img
-                            src={logo}
-                            alt="Assigner Logo"
-                            style={{ height: '60px' }}
-                        />
-                    </Navbar.Brand>
+  const [menuOpen, setMenuOpen] = useState(false);
 
-                    <Navbar.Toggle aria-controls="navbar-nav" />
-                    <Navbar.Collapse id="navbar-nav">
-                        <Nav className="ml-auto d-flex align-items-center">
-                            <div className='underNav'>
-                                <Nav.Link href="#home" style={{ color: '#641566', fontWeight: 'bold' }}>Home</Nav.Link>
-                                <Nav.Link href="#about-us" style={{ color: '#641566', fontWeight: 'bold' }}>About Us</Nav.Link>
-                                <Nav.Link href="#blog" style={{ color: '#641566', fontWeight: 'bold' }}>Blog</Nav.Link>
-                                <Nav.Link href="#services" style={{ color: '#641566', fontWeight: 'bold' }}>Our Services</Nav.Link>
-                                <Nav.Link href="#ielts-pte" style={{ color: '#641566', fontWeight: 'bold' }}>IELTS & PTE</Nav.Link>
-                                <Nav.Link href="#contact" style={{ color: '#641566', fontWeight: 'bold' }}>Contact Us</Nav.Link>
-                            </div>
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-                            <Button
-                                style={{
-                                    width: '139.6px',
-                                    height: '40.24px',
-                                    backgroundColor: '#641566',
-                                    border: 'none',
-                                    borderRadius: '20px',
-                                    color: '#ffffff',
-                                    fontWeight: 'bold',
-                                    marginLeft: '20px',
-                                }}
-                            >
-                                Login
-                            </Button>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </header>
-    );
+  return (
+    <header>
+      <div className="sec-navbar">
+        <div className="logo">
+          <a href="#"><img src={logo} alt="Assigner Logo" className="navbar-logo" /></a>
+        </div>
+        <ul className='links'>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">IELTS & PTE</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <a href="#" className="login-btn">Login</a>
+        <div className="toggle-btn" onClick={toggleMenu}>
+          <FontAwesomeIcon icon={faBars} size="lg" color="black" />
+        </div>
+      </div>
+
+      {/* Dropdown Menu*/}
+      <div className={`dropdown_menu ${menuOpen ? 'open' : ''}`}>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">IELTS & PTE</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+  );
 };
 
 export default NavBar;

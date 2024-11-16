@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 375px) and (max-width: 1000px) {
+  .App {
+    text-align: center;
+    min-width: initial;
+    min-height: initial;
+  }
+}

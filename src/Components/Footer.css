@@ -1,0 +1,155 @@
+.footer-container {
+  position: absolute;
+  width: 100%;
+  height: 85vh;
+  margin-top: 5%;
+}
+
+.footer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.links-container {
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  justify-content: space-between;
+  font-family: "Cormorant", serif;
+  color: black;
+  padding: 20px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.footer-list p {
+  font-size: 2em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-list li {
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.footer-list a:hover {
+  color: #f8d7da;
+}
+
+.email-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-btn .btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.email-btn .btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.email-btn .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.email-btn .btn:hover {
+  background-color: #0056b3;
+}
+
+.email-btn .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.footer-icons {
+  background-color: black;
+  color: white;
+  padding: 4px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: blue;
+}
+
+.Newslinks {
+  margin-top: 17%;
+}
+
+@media (min-width: 375px) and (max-width: 1000px) {
+  .footer-container {
+    height: 141vh;
+  }
+
+  .footer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .links-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-list {
+    text-align: center;
+  }
+
+  .footer-list p {
+    font-size: 1em;
+  }
+
+  .footer-list li {
+    margin-bottom: 10px;
+    line-height: 1;
+  }
+
+  .footer-list a {
+    font-size: 0.8em;
+  }
+
+  .email-btn {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .Newslinks {
+    margin-top: 10%;
+  }
+}
